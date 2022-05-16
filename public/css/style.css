@@ -257,7 +257,7 @@ header, .project:not(:last-child) {
   border: black solid 0.1rem;
   border-radius: 0.75rem 0.75rem;
   background-color: lightgray;
-  width: 32%;
+  width: 1.4rem;
 }
 
 .tainer {

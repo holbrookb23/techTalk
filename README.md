@@ -22,5 +22,7 @@ underneath the post is the comment section with a comment form to be able to add
 
 ## link
 
-##
+[techTalk](https://techtalkist.herokuapp.com/)
+
+## 
 [!screenshot](/techTalk.png)
