@@ -1,0 +1,68 @@
+<div class="post-page">
+  <div class="post-display">
+      <div class="post-header">
+        <h2 id="title" class="tt-c">{{title}}</h2>
+        <div>
+          <p>Created by {{user.username}} on {{format_date date_created}}</p>
+          <div id="btns">
+              <button class="no-button" id="edit"><img class="e-btn" src="/img/edit-24.png" alt="edit"></button>
+          </div>
+        </div>
+      </div>
+      <div class="post-message">
+        <p id="message">{{message}}</p>
+        
+      </div>
+      <div class="be">
+        <form class="h eb w-50 z-1" id="editForm">
+          
+          <input type="hidden" id="postId" value={{id}}>
+          <div class="del">
+            <label for="postTitle">Title</label>
+            <input class="ml w-84" type="text" id="postTitle" value={{title}}>
+          </div>
+          <div class="del">
+          <label for="postMessage">Body</label>
+          <input type="text" id="postMessage" class="w-84" value={{message}}>
+          </div>
+          <button type="submit" id="eSub" class=" btn btn-primary btn-a mt">submit</button>
+        </form>
+      </div>
+    
+  </div>
+  <div class="comment-display">
+    <div class="comment-container">
+      <label for="comment" class="label">Comments</label>
+      {{#each comments as |comment|}}
+        <div class="comment-box">
+          <div class="post-header">
+            <div class="d-f">
+              <img class="user-a" src="/img/user-24.png" alt="user">
+              <p class="userline">{{comment.user.username}}</p>
+            </div>
+            <p>{{format_local comment.date_created}}</p>
+          </div>
+          <div class="post-header">
+            <p class="pl">{{comment.message}}</p>
+            <button class="x-btn" data-id="c{{comment.id}}">x</button>
+
+          </div>
+          
+          
+        </div>
+      {{/each}}
+      <form class="form new-project-form">
+        <div class="form-group text-center">
+            
+            <input class="form-input" type="text" id="commentMessage" name="comment" />
+            <input type='hidden' id='post_id' value='{{id}}' />
+          </div>
+          <div class="form-group btn-a">
+            <button type="submit" id="commentBtn" class="btn btn-primary">Comment</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="/js/post.js"></script>

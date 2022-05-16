@@ -1,0 +1,57 @@
+<div class="w-80">
+  <div class="row profile-header ">
+    <div class="col-auto">
+      <h2 class="ta-s" >Welcome, {{username}}!</h2>
+    </div>
+  </div>
+
+  <div class="w-75 row mt-4 postForm">
+    <div class="w-100 post-creater">
+      <h3>Create a new post:</h3>
+
+      <form class="form new-project-form">
+        <div class="form-group">
+          <label for="project-name">Title:</label>
+          <input class="form-input" type="text" id="postName" name="project-name" />
+        </div>
+        <div class="form-group">
+          <label for="project-funding">Content:</label>
+          <input class="form-input" type="text" id="postMessage" size="5" name="project-funding" />
+        </div>
+        <div class="form-group btn-a">
+          <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <h3 class="mt-2 ta-s">Your Posts</h3>
+
+  {{#if posts.length}}
+  <div id="containerPost"
+
+    {{#each posts as |post|}}
+      <div class="profilePost">
+        <div class="ppb">
+            <a id="pTitle" class="links fs-2" href="/api/posts/{{post.id}}">{{post.title}}</a>
+          <div class="postBtn">
+            <button class="btn btn-danger del" data-id="d{{post.id}}">Delete</button>
+          </div>
+        </div>
+
+        <form class="ePost">
+          
+        </form>
+        
+      </div>
+    {{/each}}
+  </div>
+
+
+  {{/if}}
+</div>
+
+  
+
+
+<script src="./js/profile.js"></script>

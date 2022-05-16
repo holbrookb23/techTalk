@@ -1,0 +1,377 @@
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+#btns {
+  text-align: end;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.head {
+  background-color: skyblue;
+  box-shadow: lightgrey 0rem 0.2rem 0.3rem;
+}
+
+.foot {
+  background-color: skyblue;
+  border-top: rgb(97, 97, 97) solid .01rem;
+  padding: 1rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  width: 100%;
+  height: 2.5rem; 
+}
+
+/* buttons to configure */
+
+.del {
+  display: block;
+  text-align: start;
+}
+
+.edit {
+  display: block;
+}
+
+.ePost {
+  display: block;
+}
+
+.x-btn {
+  display: block;
+  background-color: lightgrey;
+  border-radius: 1rem;
+  height: 50%;
+  border: black solid .01rem;
+}
+
+.x-btn:hover {
+  border-color: white;
+  background-color: red;
+  color: white;
+  box-shadow: black 0rem .1rem .2rem 0rem;
+}
+
+.x-btn:active {
+  background-color: rgb(146, 2, 2);
+  box-shadow: black 0rem .05rem .01rem 0rem;
+}
+
+.post-container {
+  display: flex;
+  justify-content: space-between;
+  border: rgba(218 220 220 / 60%) solid 0.01rem;
+  border-radius: 1rem;
+  box-shadow: rgb(195 200 203) 0.02rem 0.02rem 0.5rem 0.05rem;
+  padding: 0.5rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.post-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.post-display {
+  width: 80%;
+  text-align: center;
+  background-color: white;
+}
+
+.comment-display {
+  background-color: rgb(181, 228, 237);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh
+}
+
+.post-container:hover {
+  box-shadow: #1b89bc 0.02rem 0.02rem 0.5rem 0.05rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.profile-header {
+  background-color: white;
+  border-bottom: black solid 0.01rem;
+  padding-bottom: 0.5rem;
+}
+
+.profilePost {
+  border: rgba(189, 189, 189, 0.6) solid 0.01rem;
+  border-radius: 1rem;
+  box-shadow: rgb(195 200 203) 0.02rem 0.02rem 0.5rem 0.05rem;
+  margin-top: 1rem;
+    -webkit-animation: update 3s;
+    animation: update 3s;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    animation-play-state: paused;
+}
+
+.ppb {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-message {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.postBtn {
+  display: flex;
+}
+
+.pEdit {
+  padding: 1rem;
+  border-top: #afacac solid 0.01rem;
+}
+
+.comment-container {
+  border: #c9c7c7 solid 0.01rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1.6rem;
+  background-color: white;
+  width: 81%;
+}
+.comment-box {
+  padding: .5rem;
+  border-bottom: lightgray solid 0.01rem;
+}
+
+.bc-b {
+  background-color: #1b89bc;
+}
+
+.cw {
+  color: white;
+}
+
+.d-f {
+  display: flex;
+}
+
+.h {
+  visibility: hidden;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.pr {
+  padding-right: .5rem;
+}
+
+.pr-2 {
+  padding-right: .25rem;
+}
+
+.pl {
+  padding-left: .5rem;
+}
+
+.pl-2 {
+  padding-left: .25rem;
+}
+
+.ml {
+  margin-left: 0.4rem;
+}
+
+.mr {
+  margin-right: .5rem;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.links:hover {
+  text-decoration: none;
+  color: rgb(87, 87, 87);
+}
+
+.p-r {
+  position: relative;
+}
+
+.mt {
+  margin-top: .3rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.postForm {
+  border: rgba(218 220 220 / 60%) solid 0.01rem;
+  border-radius: 1rem;
+}
+
+.user-a {
+  height: 50%;
+  border: black solid 0.1rem;
+  border-radius: 0.75rem 0.75rem;
+  background-color: lightgray;
+  width: 32%;
+}
+
+.tainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+.wroop {
+  padding-bottom: 2.5rem;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-84 {
+  width: 84%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.ta-c {
+  
+  text-align: -webkit-center;
+}
+
+.label {
+  border-bottom: lightgray solid 0.01rem;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: small;
+  text-align: left;
+}
+
+.tt-c {
+  text-transform: capitalize;
+}
+
+.e-btn {
+  padding: .2rem
+}
+
+.e-btn:hover {
+  padding: 0.1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: black 0rem 0.1rem 0.1rem 0rem;
+  background-color: rgb(134, 218, 10);
+}
+
+.e-btn:active {
+  border-color: black;
+  background-color: rgb(87, 138, 11);
+  box-shadow: black 0rem 0.01rem 0.01rem 0rem;
+}
+
+.l:hover {
+  border-right:rgb(87, 87, 87) solid .01rem;
+}
+
+.c:hover {
+  border-right:rgb(87, 87, 87) solid .01rem;
+  border-left:rgb(87, 87, 87) solid .01rem;
+}
+
+.r:hover {
+  border-left:rgb(87, 87, 87) solid .01rem;
+}
+
+.btn-a {
+  text-align: end;
+}
+
+.ta-s {
+  text-align: start;
+}
+
+
+.post-creater {
+  text-align: start;
+  padding: 1rem;
+}
+
+.userline {
+  line-height: unset;
+  padding-left: .2rem;
+}
+
+.eb {
+  border: #c9c7c7 solid 0.01rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1.6rem;
+  background-color: white;
+  z-index: 1;
+  box-shadow: aliceblue 0rem 0.5rem 0.5rem 0re
+}
+
+.be {
+  text-align: -webkit-right;
+  margin-top: -5%;
+}
+
+.login {
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+
